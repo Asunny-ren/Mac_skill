@@ -64,3 +64,159 @@
   alias -s zip='unzip'
   alias -s bz2='tar -xjvf'
 ```
+
+
+
+# Mac中好玩的一些命令
+
+* 苹果公司广告词
+
+``` txt
+Here's to the crazy ones. 
+
+The misfits. 
+
+The rebels. 
+
+The troublemakers. 
+
+The round pegs in the square holes. 
+
+The ones who see things differently. 
+
+They're not fond of rules 
+
+And they have no respect for the status quo. 
+
+You can praise them, 
+
+quote them, 
+
+disagree with themdisbelieve them, 
+
+glorify or vilify them. 
+
+About the only thing that you can't do is ignore them. 
+
+Because they change things. 
+
+They invent. 
+
+They imagine. 
+
+They heal. 
+
+They explore. 
+
+They create. 
+
+They inspire. 
+
+They push the human race forward. 
+
+Maybe they have to be crazy. 
+
+How else can you stare at an empty canvas and see a work of art? 
+
+Or sit in silence and hear a song that's never been written? 
+
+Or gaze at a red planet and see a laboratory on wheels? 
+
+We make tools for these kinds of people. 
+
+While some may see them as the crazy ones, 
+
+we see genius. 
+
+Because the people who are crazy enough to think that they canchange the world, 
+
+are the ones who do. 
+============================================================ 
+向疯狂的人们致敬 
+
+这个世界上有疯狂的人， 
+
+不适应工作的人，叛逆者，惹事生非的人， 
+
+与环境格格不入的人，看问题与别人不一样的人． 
+
+他们不喜欢规则，也不喜欢现状． 
+
+你可以赞同他们的话，也可以反对他们的话． 
+
+你可以赞美他们，也可以诋毁他们． 
+
+你惟一不能做的～～～就是忽视他们． 
+
+因为他们可以改变世界，推动人类的发展． 
+
+可能有人认为他们是疯子，但我们认为他们是天才． 
+
+因为这些人够疯狂，他们认为可以改变世界～～～而且他们 
+
+确实在这么做．
+
+```
+
+
+* 文本编辑器图标
+
+``` txt
+Dear Kate,
+
+Here's to the crazy ones.
+The misfits. The rebels.
+The troublemakers.The round
+pegs in the square holes - the
+ones who see things differently.
+They're not found of rules and
+they have no respect for
+the status quo.You can praise
+them,disagree with them,
+quote them,disbelieve them,
+glorify or vilify them.
+About the only thing that you
+can't do is ignore them.
+Because they change things.
+
+Take care,
+John Appleseed
+```
+
+* Mac心理分析
+
+``` hash
+$ emacs
+按下回车之后立刻按esc+x，然后输入
+psychoanalyze-pinhead 回车
+
+
+ctrl+g Mac会问一些问题
+
+```
+
+* Dock 吮吸效果
+
+``` hash
+$ defaults write com.apple.dock mineffect -string suck
+```
+
+* 历史上每一天的重大事件
+
+
+``` hash
+$ cat /usr/share/calendar/calendar.history
+```
+
+* keynote icon上的歌曲
+
+
+``` txt
+The Bitch of Living
+```
+
+* 星球大战
+
+``` hash
+telnet towel.blinkenlights.nl
+```
