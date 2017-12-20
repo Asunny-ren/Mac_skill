@@ -188,7 +188,7 @@ John Appleseed
 ``` hash
 $ emacs
 按下回车之后立刻按esc+x，然后输入
-psychoanalyze-pinhead 回车
+$ psychoanalyze-pinhead 回车
 
 
 ctrl+g Mac会问一些问题
@@ -218,5 +218,5 @@ The Bitch of Living
 * 星球大战
 
 ``` hash
-telnet towel.blinkenlights.nl
+$ telnet towel.blinkenlights.nl
 ```
