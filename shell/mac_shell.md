@@ -4,7 +4,7 @@
 
 ``` code
   // 查看系统有几种shell，默认都是bash,mac多一个zsh
-  car /etc/shells
+  cat /etc/shells
 
   /bin/bash
   /bin/csh
