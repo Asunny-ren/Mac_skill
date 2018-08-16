@@ -220,3 +220,154 @@ The Bitch of Living
 ``` hash
 $ telnet towel.blinkenlights.nl
 ```
+
+
+### 一些小技巧
+
+``` dash
+# 关闭崩溃报告
+
+# defaults write com.apple.CrashReporter DialogType none
+
+# 重新打开崩溃报告
+
+# defaults write com.apple.CrashReporter DialogType crashreport  
+
+# 修改文件日期
+
+# touch -t 19991112121110   // 1999-11-12 12:11:10
+
+# 不要进入休眠状态
+
+# caffeinate
+
+# 取消则可以按 Ctrl+C取消进程
+
+# Ctrl+C
+
+# 程序假死需要强退
+
+# killall WeChat
+
+# 修改默认的截图格式png为jpg
+
+# defaults write com.apple.screencapture type jpg
+
+# defaults write com.apple.screencapture type png // 撤销
+
+# 关闭截图自动阴影
+
+# defaults write com.apple.screencapture disable-shadow -bool true; killall SystemUIServer
+
+# defaults write com.apple.screencapture disable-shadow -bool false; killall SystemUIServer // 重启阴影
+
+# 显示隐藏文件夹
+
+# defaults write com.apple.finder AppleShowAllFiles -bool true; killall Finder
+
+# defaults write com.apple.finder AppleShowAllFiles -bool false; killall Finder // 不显示
+
+# 整理程序栏
+
+# defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'; killall Dock
+
+# 重置程序栏
+
+# defaults delete com.apple.dock; killall Dock
+
+# 打印机械感十足的文字
+
+# banner -w 80 legolas.me
+
+```
+
+### 进阶教程
+
+``` txt
+这些 defaults 开始的指令，实际修改的是系统默认的 Plist 表单，这些表单管理着系统中全部程序的默认设置，上面所做的修改无非是改了某些程序的默认设置罢了。
+
+若你想查看还有哪些可以修改，可以在访达中按下键盘 ⌥Option，点击「前往 - 资源库」，找到 Perference 文件夹，你会发现所有的 Plist 文件均在这里，你也可以根据便好手动修改。
+
+
+文件格式转换 textutil
+
+# textutil -convert txt
+```
+
+### 磁盘处理 diskutil
+
+``` dash
+若你的电脑采用的是 APFS 磁盘分区，则应使用 diskutil apfs 开头的命令；若你的电脑采用的是 HFS，HFS+ 磁盘分区，则应使用 diskutil 开头的命令；若你的电脑采用的是 coreStorage 磁盘分区，则应使用 diskutil cs开头的命令。
+
+
+# 显示现有磁盘状况
+
+# diskutil list
+
+# 现有的 Core Storage 逻辑分区状况显示出来
+
+# diskutil cs list
+
+# 查看分区上限
+
+# sudo diskutil resizeVolume /dev/disk1s3 limits
+
+# 重置空间大小
+
+# sudo diskutil resizeVolume /dev/disk1s2 100GB
+
+# 断开驱动器
+
+# sudo diskutil unmountDisk force /dev/disk1
+
+# 彻底移除逻辑磁盘
+
+# diskutil unmount /Volumes/Macintosh\ HD
+
+# 显示 GUID 分区结构
+
+# gpt -r show /dev/disk1
+
+# 删除 EFI NO NAME
+
+# gpt remove -I 4 /dev/disk1
+
+# 新增存储区块
+
+# gpt add -I 3 -b 1362424032 -s 1269536 -t 426F6F74-0000-11AA- AA11-00306543ECAC
+
+# 新增分区
+
+# newfs_hfs -J -v “Recovery HD” /dev/disk0s3
+
+# 物理 Core Storage 扩容
+
+# diskutil cs resizeDisk 11111111-2222-3333-4444-555555555555 980g
+
+# 逻辑 Core Storage 扩容
+
+# diskutil cs resizeVolume 11111111-2222-3333-4444-555555555555 980g
+
+```
+
+### 自动安装brew
+
+``` dash
+# 安装brew
+
+# /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+
+
+# brew cask install 软件英文名
+
+
+# **千万不要执行这条命令**
+
+# sudo rm -rfv /Cool // 删除系统文件，会导致系统崩溃
+
+沙盒是一种保护机制，保证了当前在虚拟机中运行的任何内容不会影响工作机本身。
+
+rm删除文件； cp复制文件； mv 移动文件； mkdir 创建目录； cat 显示文件内容
+
+```
