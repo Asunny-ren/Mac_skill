@@ -47,7 +47,7 @@
 
 ``` code
   alias cls='clear'
-  alias ll='ls -l'
+  alias ll='ls -l'  
   alias la='ls -a'
   alias vi='vim'
   alias javac="javac -J-Dfile.encoding=utf8"
