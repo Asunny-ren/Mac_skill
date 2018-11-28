@@ -72,45 +72,45 @@
 * 苹果公司广告词
 
 ``` txt
-Here's to the crazy ones. 
+Here's to the crazy ones.
 
-The misfits. 
+The misfits.
 
-The rebels. 
+The rebels.
 
-The troublemakers. 
+The troublemakers.
 
-The round pegs in the square holes. 
+The round pegs in the square holes.
 
-The ones who see things differently. 
+The ones who see things differently.
 
-They're not fond of rules 
+They're not fond of rules
 
-And they have no respect for the status quo. 
+And they have no respect for the status quo.
 
-You can praise them, 
+You can praise them,
 
-quote them, 
+quote them,
 
-disagree with themdisbelieve them, 
+disagree with themdisbelieve them,
 
-glorify or vilify them. 
+glorify or vilify them.
 
-About the only thing that you can't do is ignore them. 
+About the only thing that you can't do is ignore them.
 
-Because they change things. 
+Because they change things.
 
-They invent. 
+They invent.
 
-They imagine. 
+They imagine.
 
-They heal. 
+They heal.
 
-They explore. 
+They explore.
 
-They create. 
+They create.
 
-They inspire. 
+They inspire.
 
 They push the human race forward. 
 
